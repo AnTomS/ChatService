@@ -8,7 +8,7 @@ class ChatServiceTest {
     @Test
     fun createMessage_newMessage() {
         val authorId = UserId(0)
-        val text = "Nest text"
+        val text = "Test text"
         val message = Message(MessageId(0), text, authorId)
         val chatId = 0L
         val expected = listOf(message)

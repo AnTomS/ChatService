@@ -5,7 +5,7 @@ class ChatService {
     private var chats: List<Chat> = emptyList()
 
 
-    fun createMessage(authorId: UserId, text: String, chatId: Long = -1L): Message {
+    fun createMessage(authorId: UserId, text: String, chatId: Long = -1): Message {
         val message = Message(MessageId(messageId++), text, authorId)
 
         if (chats.none { it.id == chatId }) {
